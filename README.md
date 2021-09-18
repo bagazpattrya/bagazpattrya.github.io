@@ -1,0 +1,1 @@
+# bagazpattrya.github.io
