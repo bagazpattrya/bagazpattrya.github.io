@@ -3,7 +3,6 @@ body{
     padding: 0;
     /*background-color: rgb(10, 10, 10) !important;*/
     overflow-x: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body::-webkit-scrollbar{
@@ -43,7 +42,7 @@ body::-webkit-scrollbar{
 }
 
 .first-page{
-    background: rgb(14, 14, 14) !important;
+    background: rgb(32, 32, 32) !important;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -58,9 +57,9 @@ body::-webkit-scrollbar{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    bbackground-color: rgb(73, 73, 73);
+    background-color: rgb(73, 73, 73);
     width: 60vw;
-    height: 40vh;
+    height: 20vw;
 }
 
 .title-text-container{
@@ -68,7 +67,7 @@ body::-webkit-scrollbar{
     align-items: center;
     width: 90%;
     height: 60%;
-    bbackground-color: rgb(97, 97, 97);
+    background-color: rgb(97, 97, 97);
 }
 
 .title-text{
@@ -83,46 +82,16 @@ body::-webkit-scrollbar{
     display: flex;
     align-items: center;
     width: 90%;
-    height: 20%;
-    bbackground-color: rgb(150, 150, 150);
+    height: 30%;
+    background-color: rgb(150, 150, 150);
 }
 
 .sub-title-text{
     color: white;
-    font: 1.2em "Fira Sans", sans-serif;
-    font-weight: normal;
+    font: 0.9em "Fira Sans", sans-serif;
+    font-weight: 100 !important;
 }
 
-.cta-container{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    height: 30%;
-    bbackground-color: rgb(255, 153, 209);
-    align-items: center;
-}
-
-.cta-container p{
-    margin-left: 1%;
-    color: white;
-}
-
-.cta-container a{
-    margin-left: 1%;
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-}
-
-.hireme-button button{
-    background-color: rgb(6, 114, 255);
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: none;
-    font-size: 1.2vw;
-    font-weight: bold;
-    padding: 0.5vw;
-}
 
 
 .second-text-container{
@@ -299,21 +268,19 @@ body::-webkit-scrollbar{
     }
 
     canvas{
-        z-index: 0 !important;
         display: none !important; 
         position: fixed !important;
     }
 
     .main-title-text-container{
         width: 80%;
-        height: 45%;
+        height: 18%;
     }
 
     .title-text{
-        font-family: 'Inter';
-        font-size: 3vh;
-        line-height: 6vh;
-        
+        /margin-bottom: -3vh;
+        font-size: 2vh;
+        line-height: 4vh;
     }
 
     .sub-title-container{
@@ -323,46 +290,8 @@ body::-webkit-scrollbar{
     }
 
     .sub-title-text{
-        margin-top: -5vh;
-        font-family: 'Inter';
-        font-size: 2.3vh;
-        margin-bottom: 5vh;
-    }
-
-    .cta-container{
-        height: 20%;
-    }
-
-    .cta-container p{
-        display: none;
-    }
-
-    .cta-container a{
-        font-family: 'Inter';
-        font-weight: normal;
-        font-size: 1.5vh;
-        margin-left: 8vw;
-    }
-
-    .cta-container button{
-        font-family: 'Inter';
-        font-size: 1.8vh;
-        padding: 1vh 3vh;
-    }
-
-    
-
-    .second-page-title{
-        height: 15%;
-    }
-
-    .second-page-title h2{
-        margin-top: -2vh;
-        font-size: 5vh;
-    }
-
-    .second-page-title h3{
-        font-size: 1.5vh;
+        /margin-top: -1vh;
+        font: 1vh "Fira Sans", sans-serif;
     }
 }
 

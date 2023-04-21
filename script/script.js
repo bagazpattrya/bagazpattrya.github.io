@@ -7,7 +7,7 @@ canvas.width = canvas.width - 20;
 canvas.height = canvas.height - 20;
 
 var c = canvas.getContext('2d');
-var center = {x: (canvas.width-1400) , y: canvas.height / 2};
+var center = {x: canvas.width / 2, y: canvas.height / 2};
 
 
 function Circle(x,y,radius,fillColor){
@@ -314,17 +314,17 @@ function animate(){
     }*/
     //var ring4 = new Circle(center.x, center.y, 300, 'rgba(255, 204, 0, 0.8')
     //var ring3 = new Circle(center.x,center.y, 245,'rgba(10, 23, 66, 0.5)');
-    //var ring2 = new Circle(center.x,center.y, 215,'rgba(9, 30, 75, 0.5)');
-    //var ring1 = new Circle(center.x,center.y, 175,'rgba(8, 34, 83, 0.5)');
-    //var earthBorder = new Circle(center.x,center.y, 135,'rgb(12, 20, 56)');
-    var earth = new Circle(center.x,center.y, earthWidth,'rgb(25, 118, 181)');
+    var ring2 = new Circle(center.x,center.y, 215,'rgba(9, 30, 75, 0.01)');
+    var ring1 = new Circle(center.x,center.y, 175,'rgba(8, 34, 83, 0.2)');
+    var earthBorder = new Circle(center.x,center.y, 135,'rgba(51, 194, 255, 0.1)');
+    var earth = new Circle(center.x, center.y, earthWidth, 'rgb(25, 118, 181)');
     for (var i = 1; i < land.length; i++){
         land[i].update();
     }
     for (var i = 1; i < clouds.length; i++){
         clouds[i].update();
     }
-    var semi = new SemiCircle(center.x,center.y,earthWidth,'rgba(0, 0, 0, 0.4)');
+    //var semi = new SemiCircle(0, center.y,earthWidth,'rgba(0, 0, 0, 0.4)');
 }
 
 animate();
