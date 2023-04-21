@@ -159,7 +159,7 @@ body::-webkit-scrollbar{
 .second-page-title{
     width: 90vw;
     height: 20%;
-    background-color: rgb(71, 71, 71);
+    /*background-color: rgb(71, 71, 71);*/
     margin-bottom: 5vh;
     display: flex;
     flex-direction: column;
@@ -171,7 +171,7 @@ body::-webkit-scrollbar{
     display: flex;
     width: 100%;
     height: 65%;
-    background-color: rgb(226, 110, 43);
+    /*background-color: rgb(226, 110, 43);*/
     align-items: center;
 }
 
@@ -185,7 +185,7 @@ body::-webkit-scrollbar{
     align-items: center;
     width: 100%;
     height: 35%;
-    background-color: rgb(158, 56, 76);
+    /*background-color: rgb(158, 56, 76);*/
 }
 
 .second-page-title p{
@@ -201,7 +201,7 @@ body::-webkit-scrollbar{
     justify-content: center;
     width: 90vw;
     height: 60%;
-    background-color: rgb(80, 145, 145);
+    /*background-color: rgb(80, 145, 145);*/
     margin-bottom: 1vh;
     
 }
@@ -215,16 +215,17 @@ body::-webkit-scrollbar{
     margin-right: 5vw;
     margin-bottom: 1vh;
     margin-top: 1vh;
-    background-color: rgb(90, 47, 47);
+    background-color: rgb(39, 39, 39);
     align-items: center;
     justify-content: center;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.274));
     
 }
 
 .content-container{
     width: 90%;
     height: 90%;
-    background-color: cornflowerblue;
+    /*background-color: cornflowerblue;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -235,7 +236,7 @@ body::-webkit-scrollbar{
     justify-content: center;
     width: 100%;
     height: 50%;
-    background-color: coral;
+    /*background-color: coral;*/
     filter: invert(1);
 }
 
@@ -243,7 +244,7 @@ body::-webkit-scrollbar{
     display: flex;
     width: 90%;
     height: 20%;
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
     align-items: center;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -254,7 +255,7 @@ body::-webkit-scrollbar{
     display: flex;
     width: 100%;
     height: 30%;
-    background-color: rgb(118, 47, 184);
+    /*background-color: rgb(118, 47, 184);*/
     align-items: center;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -385,7 +386,6 @@ body::-webkit-scrollbar{
         justify-content: center;
         width: 90vw;
         height: 60%;
-        background-color: rgb(80, 145, 145);
         margin-bottom: 1vh;
         
     }
@@ -398,7 +398,6 @@ body::-webkit-scrollbar{
         margin-right: 5vw;
         margin-bottom: 1vh;
         margin-top: 1vh;
-        background-color: rgb(209, 154, 154);
         align-items: center;
         justify-content: center;
         
@@ -415,7 +414,6 @@ body::-webkit-scrollbar{
     .content-container{
         width: 90%;
         height: 90%;
-        background-color: cornflowerblue;
         display: flex;
         flex-direction: column;
     }
