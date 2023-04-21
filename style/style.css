@@ -3,7 +3,7 @@ body{
     padding: 0;
     /*background-color: rgb(10, 10, 10) !important;*/
     overflow-x: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter';
 }
 
 body::-webkit-scrollbar{
@@ -13,9 +13,6 @@ body::-webkit-scrollbar{
 .only-small{
     display: none !important;
 }
-
-
-
 
 .top-nav-bar{
     position: fixed;
@@ -27,7 +24,6 @@ body::-webkit-scrollbar{
     flex-direction: row;
     align-items: last baseline;
     justify-content: right;
-    /*background-color: rebeccapurple;*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
@@ -36,7 +32,6 @@ body::-webkit-scrollbar{
     margin-left: 1vw;
     height: 5vh;
     width: 5%;
-    backg.round-color: rgb(78, 78, 78);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,8 +44,6 @@ body::-webkit-scrollbar{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(7,0,47);
-    background: linear-gradient(0deg, rgba(7,0,47,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 .main-title-text-container{
@@ -58,7 +51,7 @@ body::-webkit-scrollbar{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    bbackground-color: rgb(73, 73, 73);
+    /*bbackground-color: rgb(73, 73, 73);*/
     width: 60vw;
     height: 40vh;
 }
@@ -68,7 +61,7 @@ body::-webkit-scrollbar{
     align-items: center;
     width: 90%;
     height: 60%;
-    bbackground-color: rgb(97, 97, 97);
+    /*bbackground-color: rgb(97, 97, 97);*/
 }
 
 .title-text{
@@ -84,31 +77,32 @@ body::-webkit-scrollbar{
     align-items: center;
     width: 90%;
     height: 20%;
-    bbackground-color: rgb(150, 150, 150);
+    /*bbackground-color: rgb(150, 150, 150);*/
 }
 
 .sub-title-text{
     color: white;
-    font: 1.2em "Fira Sans", sans-serif;
+    font: 1.2em "Inter";
     font-weight: normal;
 }
 
 .cta-container{
+    margin-top: 5vh;
     display: flex;
     flex-direction: row;
     width: 90%;
     height: 30%;
-    bbackground-color: rgb(255, 153, 209);
+    /*bbackground-color: rgb(255, 153, 209);*/
     align-items: center;
 }
 
 .cta-container p{
-    margin-left: 1%;
+    margin-left: 2%;
     color: white;
 }
 
 .cta-container a{
-    margin-left: 1%;
+    margin-left: 2%;
     text-decoration: none;
     color: white;
     font-weight: bolder;
@@ -117,11 +111,11 @@ body::-webkit-scrollbar{
 .hireme-button button{
     background-color: rgb(6, 114, 255);
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter';
     border: none;
     font-size: 1.2vw;
     font-weight: bold;
-    padding: 0.5vw;
+    padding: 1vw 2vw;
 }
 
 
@@ -151,11 +145,9 @@ body::-webkit-scrollbar{
 
 
 
-.test-box{
+.second-page{
     height: 100vh;
     width: 100vw;
-    background: rgb(255, 85, 246);
-    background: linear-gradient(0deg, rgba(70,0,66,1) 0%, rgba(7,0,47,1) 100%);
     background: rgb(26, 26, 26) !important;
     display: flex;
     align-items: center;
@@ -175,18 +167,30 @@ body::-webkit-scrollbar{
     justify-content:space-around;
 }
 
-.second-page-title h2{
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 10vh;
-    margin-top: -4vh;
+.second-page-title-container{
+    display: flex;
+    width: 100%;
+    height: 65%;
+    background-color: rgb(226, 110, 43);
+    align-items: center;
 }
 
-.second-page-title h3{
+.second-page-title h2{
+    color: white;
+    font-size: 9vh;
+}
+
+.second-page-subtitle-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 35%;
+    background-color: rgb(158, 56, 76);
+}
+
+.second-page-title p{
     width: 70%;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: -10vh;
 }
 
 .second-row{
@@ -211,7 +215,7 @@ body::-webkit-scrollbar{
     margin-right: 5vw;
     margin-bottom: 1vh;
     margin-top: 1vh;
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(90, 47, 47);
     align-items: center;
     justify-content: center;
     
@@ -264,8 +268,7 @@ body::-webkit-scrollbar{
 .third-page{
     height: 100vh;
     width: 100vw;
-    background: rgb(3,0,33);
-    background: linear-gradient(0deg, rgba(3,0,33,1) 0%, rgba(70,0,66,1) 100%);   
+    background-color: darkslateblue;
 }
 
 @media screen and (max-width: 500px) {
@@ -278,7 +281,7 @@ body::-webkit-scrollbar{
 
     .top-nav-bar{
         width: 100vw;
-        /background-color: blue;
+        /*background-color: blue;*/
         justify-content: right;
         align-items: center;
         height: 8vh;
@@ -295,7 +298,6 @@ body::-webkit-scrollbar{
 
     .no-show{
         display: none;
-        background-color: brown !important;
     }
 
     canvas{
@@ -353,16 +355,69 @@ body::-webkit-scrollbar{
     
 
     .second-page-title{
-        height: 15%;
+        margin-top: -10vh;
+        display: flex;
+        height: 12%;
+    }
+
+    .second-page-title-container{
+        height: 50%;
     }
 
     .second-page-title h2{
-        margin-top: -2vh;
         font-size: 5vh;
     }
 
-    .second-page-title h3{
+    .second-page-subtitle-container{
+        height: 50%;
+    }
+
+    .second-page-title p{
         font-size: 1.5vh;
+        width: 100%;
+    }
+
+    .second-row{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+        height: 60%;
+        background-color: rgb(80, 145, 145);
+        margin-bottom: 1vh;
+        
+    }
+
+    .box-content{
+        flex-shrink: 0;
+        width: 100%;
+        height: 25%;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
+        background-color: rgb(209, 154, 154);
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .no-show img{
+        display: none;
+    }
+
+    .box-content .no-show{
+        display: none !important;
+    }
+
+    .content-container{
+        width: 90%;
+        height: 90%;
+        background-color: cornflowerblue;
+        display: flex;
+        flex-direction: column;
     }
 }
 
