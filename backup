@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Add background color to each section */
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+    
+    #section1 {
+      background-color: #f5f5f5; /* Specify the desired background color */
+    }
+    
+    #section2 {
+      background-color: #eaeaea; /* Specify the desired background color */
+    }
+    
+    #section3 {
+      background-color: #f0f0f0; /* Specify the desired background color */
+    }
+  </style>
+</head>
+<body>
+  <section id="section1">Section 1</section>
+  <section id="section2">Section 2</section>
+  <section id="section3">Section 3</section>
+
+  <script>
+    // Function to handle smooth scrolling
+    function smoothScroll(targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth"
+      });
+    }
+
+    // Configure the Intersection Observer
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1 // Adjust the threshold to fit your needs
+    };
+
+    // Create the Intersection Observer instance
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          smoothScroll(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observe the sections
+    const sections = document.querySelectorAll("section");
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
+
+
+<section class="first-page" id="section1">
+    <div class="main-title-text-container">
+        <div class="title-text-container">
+            <div class="title-text">
+                <h1>Hi, <br>I'm Bagaz Pattrya</h1>
+            </div>
+        </div>
+        <div class="sub-title-container">
+            <div class="sub-title-text">
+                <p>&lt; I am a Game, Web and Mobile dev, Electrical Engineer, Designer, 3D Artist and more.. &sol;  &gt;</p>
+        
+            </div>
+        </div>
+        <div class="cta-container">
+            <div class="hireme-button">
+                <button>Hire Me</button>
+                
+            </div>
+            <p>or</p>
+            <a href="">See My Projects!</a>
+
+        </div>
+    </div>
+    
+</div>
+<div class="second-page" id="section2">
+    <div class="second-page-title">
+        <div class="second-page-title-container">
+            <h2>
+                What I Do?
+            </h2>
+        </div>
+        <div class="second-page-subtitle-container">
+            <p>
+                I do various jobs around Game Dev, software and electrical engineering, as well as graphic design, 3D arts and animation
+            </p>
+        </div>
+        
+    </div>
+    <div class="second-row">
+        <div class="box-content">
+            <div class="content-container">
+                <div class="content-icon">
+                    ICON
+                </div>
+                <div class="box-content-title">
+                    Game Dev
+                </div>
+                <div class="box-content-p">
+                    I make games including 2D and 3D games with Unity & Godot!
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div class="box-content">
+            <div class="content-container">
+                <div class="content-icon">
+                    ICON
+                </div>
+                <div class="box-content-title">
+                    Web Development
+                </div>
+                <div class="box-content-p">
+                    I make websites, both the front-end and the back-end side of web!
+                </div>
+            </div>
+        </div>
+
+        <div class="box-content">
+            <div class="content-container">
+                <div class="content-icon">
+                    ICON
+                </div>
+                <div class="box-content-title">
+                    Graphic & UI Design
+                </div>
+                <div class="box-content-p">
+                    I make logos, banner, web content, as well as UI/UX design!
+                </div>
+            </div>
+        </div>
+
+        <div class="box-content no-show">
+
+        </div>
+        <div class="box-content">
+            <div class="content-container">
+                <div class="content-icon">
+                    ICON
+                </div>
+                <div class="box-content-title">
+                    3D Model & Rendering
+                </div>
+                <div class="box-content-p">
+                    I make 3D Models of various object, mostly hard surfaces. I also do CAD design!
+                </div>
+            </div> 
+        </div>
+        <div class="box-content no-show">
+            SHOULD BE NOT DISPLAYED
+        </div>
+    </div>
+</div>
+<div class="third-page" id="section3">
+    
+</div>
